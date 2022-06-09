@@ -6,7 +6,7 @@ import java.util.Comparator;
 import java.util.List;
 
 public class LongestPalindrome {
-	public String longestPalindrome(String s) {
+	public static String longestPalindrome(String s) {
 		int i=0, j = s.length()-1, counter =0;
 		String response;
 		List<String> arrayList = new ArrayList<String>();
@@ -15,9 +15,16 @@ public class LongestPalindrome {
 				response = s.substring(counter, j);
 				counter = i;
 				arrayList.add(response);
+				System.out.println(response);
+				break;
 			}
 		}
-		String max = Collections.max(arrayList, Comparator.comparing(String::length)); // or s -> s.length()
-		return max;
+//		String max = Collections.max(arrayList, Comparator.comparing(String::length)); // or s -> s.length()
+		return null;
 	}
+	public static void main(String[] args) {
+		System.out.println("resuly: "+longestPalindrome("test"));
+	}
+	
+	
 }
