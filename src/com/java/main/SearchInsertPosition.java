@@ -12,8 +12,8 @@ public class SearchInsertPosition {
 
 
 	public static void main(String[] args) {
-		int arr[] = { 1, 2, 3, 4, 5, 12 }; 
-		int target = 13;
+		int arr[] = {-15, 1, 2, 3, 4, 5, 12 }; 
+		int target = -13;
 
 	/*	List<int[]> arrList = Arrays.asList(arr); 
 		if(arrList.contains(target)) {
